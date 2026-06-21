@@ -1,1 +1,22 @@
-/*# sourceMappingURL=main.css.map */
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 1px solid red;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 363px) {
+  .container {
+    width: 363px;
+  }
+}
+@media screen and (min-width: 724px) {
+  .container {
+    width: 724px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .container {
+    width: 1380px;
+  }
+}/*# sourceMappingURL=main.css.map */
