@@ -19,4 +19,21 @@
   .container {
     width: 1380px;
   }
+}
+
+.portfolio {
+  padding-bottom: 232px;
+  padding-top: 80px;
+  background-image: url("../../../img/portfolio-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio__title {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 114%;
+  color: #f8f1e9;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
