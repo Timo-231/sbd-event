@@ -5,12 +5,14 @@
   outline: 1px solid red;
   box-sizing: border-box;
 
-    @media screen and (min-width: 363px) {
+  @media screen and (min-width: 363px) {
     width: 363px;
   }
+
   @media screen and (min-width: 724px) {
     width: 724px;
   }
+
   @media screen and (min-width: 1380px) {
     width: 1380px;
   }
