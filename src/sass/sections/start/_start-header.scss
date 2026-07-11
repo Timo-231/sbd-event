@@ -1,1 +1,82 @@
 @use "../../base/variables" as *;
+
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    &__enters {
+        display: flex;
+    }
+
+    &__login {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 129%;
+        color: $gold-text;
+    }
+
+    &__register {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 129%;
+        color: $gold-text;
+    }
+
+    &__logo {
+        font-family: ;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 120%;
+        color: $gold-logo;
+        margin-right: 15px;
+    }
+
+    &__nav {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        color: $gold-text;
+    }
+
+    &__address {
+        display: none;
+
+        @media screen and (min-width:1200px) {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 113%;
+            color: $gold-text;
+        }
+    }
+
+    &__info {
+        display: none;
+
+        @media screen and (min-width:1200px) {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 113%;
+            color: $gold-text;
+        }
+    }
+
+    &__search {
+        display: none;
+
+        @media screen and (min-width:1200px) {
+            border-radius: 4px;
+            width: 174px;
+            height: 40px;
+            border: 1px solid $grey-fon;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 122%;
+        }
+    }
+
+    &__list {
+        display: none;
+    }
+}
