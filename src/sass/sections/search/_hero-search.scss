@@ -1,1 +1,26 @@
 @use "../../base/variables" as *;
+
+.hero {
+width: 1440px;
+height: 551px;
+  background-image: 
+    url("../img/background.png"); 
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $black-fon;
+opacity: 0.8;
+}
+
+.hero-title {
+font-family:"Montserrat Alternates", sans-serif;;
+font-weight: 500;
+font-size: 56px;
+line-height: 114%;
+color: $white-fon;
+}
