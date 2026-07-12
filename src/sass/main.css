@@ -151,6 +151,23 @@ a {
   line-height: 122%;
 }
 
+.portfolio {
+  padding-bottom: 232px;
+  padding-top: 80px;
+  background-image: url("../../../img/portfolio-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio__title {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 114%;
+  color: #f8f1e9;
+  text-align: center;
+}
+
 .top-bar {
   display: flex;
   justify-content: space-between;
@@ -177,4 +194,26 @@ a {
   font-size: 64px;
   line-height: 125%;
   color: #da9d27;
+}
+
+.hero {
+  width: 1440px;
+  height: 551px;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #101010;
+  opacity: 0.8;
+}
+
+.hero-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 114%;
+  color: #f8f1e9;
 }/*# sourceMappingURL=main.css.map */
