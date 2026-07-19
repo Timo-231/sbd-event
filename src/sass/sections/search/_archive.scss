@@ -1,1 +1,130 @@
 @use "../../base/variables" as *;
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.posts {
+display: flex;
+    gap: 20px;
+   
+    position: relative;
+    padding-top:100px;
+}
+
+.post {
+  flex: 1;
+  position: relative;
+}
+
+.post img {
+  display: block;
+  border-radius: 8px;
+}
+
+
+.post:nth-child(2) {
+  top: 150px;
+}
+
+.post:nth-child(3) {
+  top: 350px;
+//   margin-left: -100px;
+}
+.title{
+   font-family:"Montserrat", sans-serif;
+font-weight: 500;
+font-size: 28px;
+line-height: 129%;
+color: $gold-logo;
+padding: 8px;
+ min-height: 90px;
+    margin-bottom: 20px;
+}
+
+
+.dates{
+    font-family:"Montserrat", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 122%;
+color: $blue-information;
+padding: 8px;
+ min-height: 30px;
+  margin-bottom: 20px;
+}
+
+.sentence{
+     font-family:"Montserrat", sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+color: $black-text;
+ min-height: 110px;
+    margin-bottom: 16px;
+}
+    .button{
+  margin-top: auto;
+  border-bottom: 1px solid $black-text;
+border-radius: 4px;
+padding: 10px 16px;
+// width: 240px;
+// height: 42px;
+ background: $white-text;
+  font-family:"Montserrat", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 122%;
+color: $green-text;
+ }
+
+
+.calendar_table {
+  border: 2px solid black;
+  font-family:"Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 113%;
+color: $black-text;
+}
+
+.calendar,
+.calendar-header,
+.calendar-table {
+  position: relative;
+  top: 350px;
+}
+
+.calendar_table th,
+.calendar-table td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+.calendar{
+font-family:"Montserrat", sans-serif;
+font-weight: 500;
+font-size: 28px;
+line-height: 129%;
+color: $gold-text;
+}
+
+.calendar-header{
+   font-family:"Montserrat", sans-serif;
+font-weight: 500;
+font-size: 28px;
+line-height: 129%;
+color: $green-footer;
+}
+
+// .weekdays{
+//    font-family:"Montserrat", sans-serif;
+// font-weight: 500;
+// font-weight: 700;
+// font-size: 18px;
+// line-height: 122%;
+// color: $gold-logo;
+// }
