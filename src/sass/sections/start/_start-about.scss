@@ -1,1 +1,64 @@
 @use "../../base/variables" as *;
+
+.start_about {
+    padding-top: 80px;
+    padding-bottom: 48px;
+
+    &about_photo {
+        border: 2px solid $white-fon;
+        border-radius: 8px;
+        width: 210px;
+        height: 210px;
+    }
+
+    &_title {
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 114%;
+        color: $gold-text;
+    }
+
+    &_text {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: $black-text;
+        max-width: 700px;
+    }
+
+    &_about_item_1 {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: $blue-information;
+
+    }
+
+    &_item {
+        border: 1px solid $black-text;
+        border-radius: 4px;
+        padding: 10px 43px;
+        width: 240px;
+        height: 42px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        color: $green-text;
+    }
+
+    &_btn {
+        border-bottom: 1px solid $black-text;
+        border-radius: 4px;
+        padding: 10px 16px;
+        width: 240px;
+        height: 42px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        color: $green-text;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+}
