@@ -1,7 +1,6 @@
 @use "../../base/variables" as *;
 
 .hero {
-padding-top: 430px;
   background-image: 
     url(../img/background.png); 
 
@@ -12,8 +11,6 @@ padding-top: 430px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $black-fon;
-opacity: 0.8;
 }
 
 .hero-title {
@@ -22,5 +19,7 @@ font-weight: 500;
 font-size: 56px;
 line-height: 114%;
 color: $white-fon;
+padding-top: 239px;
+text-align: center;
 padding-bottom: 232px;
 }

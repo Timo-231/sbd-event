@@ -8,30 +8,46 @@
 
 .posts {
   display: flex;
-  gap: 20px;
-
+  gap: 16px;
   position: relative;
-  padding-top: 100px;
+  padding-top: 825px;
 }
 
-.post {
-  flex: 1;
-  position: relative;
+.img{
+    position: absolute;
+
 }
 
-.post img {
+.snacks{
+    top: 100px;
+  left: 40px;
+  z-index: 1;
+  width: 283px;
+height: 230px;
+}
+
+.dinner{
+    top: 160px;
+  left: 201px;
+  z-index: 2;
+  width: 383px;
+height: 310px;
+}
+
+.thanksgiving{
+  top: 415px;
+  left: 502px;
+  z-index: 1;
+  width: 283px;
+height: 230px;
+}
+
+.images {
   display: block;
   border-radius: 8px;
+  position: relative;
 }
 
-.post:nth-child(2) {
-  top: 150px;
-}
-
-.post:nth-child(3) {
-  top: 350px;
-  //   margin-left: -100px;
-}
 .title {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -68,8 +84,6 @@
   border-bottom: 1px solid $black-text;
   border-radius: 4px;
   padding: 10px 16px;
-  // width: 240px;
-  // height: 42px;
   background: $white-text;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -101,6 +115,7 @@
   font-size: 28px;
   line-height: 129%;
   color: $gold-text;
+  padding-top: 50px;
 }
 
 .calendar-title{
@@ -109,6 +124,10 @@ font-weight: 500;
 font-size: 28px;
 line-height: 129%;
  color: $gold-text;
+}
+
+.sidebar{
+  padding-top: 100px;
 }
 
 .calendar-header {
@@ -122,7 +141,9 @@ line-height: 129%;
 .archive {
   background: $white-fon;
     display: flex;
-  gap: 16px;
+    justify-content: space-between;
+    width: 408px;
+height: 672px;
 }
 
 .archive-title{
@@ -132,6 +153,7 @@ line-height: 129%;
   line-height: 129%;
   color: $gold-text;
   padding: 8px;
+   padding-right: 40px;
 }
 
 .li-archive{
@@ -148,5 +170,8 @@ color: $green-footer;
   border-left: 2px solid $gold-text;
   padding-left: 40px;
    margin: 0;
+    display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
