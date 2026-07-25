@@ -205,44 +205,58 @@ a {
   padding-top: 80px;
   padding-bottom: 48px;
 }
-.start_aboutabout_photo {
+.start_about_container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.start_about_photo {
   border: 2px solid #f8f1e9;
   border-radius: 8px;
   width: 210px;
   height: 210px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  flex-shrink: 0;
+}
+.start_about_content {
+  flex-grow: 1;
+  padding-top: 8px;
+  max-width: 700px;
 }
 .start_about_title {
   font-weight: 500;
   font-size: 56px;
   line-height: 114%;
   color: #a76e00;
+  margin-bottom: 16px;
 }
 .start_about_text {
+  position: relative;
   font-weight: 400;
   font-size: 20px;
   line-height: 160%;
   color: #3d3c39;
-  max-width: 700px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-.start_about_about_item_1 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 160%;
-  color: #3e1063;
+.start_about_text::before {
+  width: 95px;
+  height: 2px;
+  background-color: #a76e00;
+  content: "";
 }
-.start_about_item {
-  border: 1px solid #3d3c39;
-  border-radius: 4px;
-  padding: 10px 43px;
-  width: 240px;
-  height: 42px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 122%;
-  color: #04867e;
+.start_about_info {
+  display: flex;
+  align-items: end;
+  margin-left: auto;
 }
 .start_about_btn {
+  border: none;
   border-bottom: 1px solid #3d3c39;
+  border-radius: 0;
+  padding: 0 0 4px;
   border-radius: 4px;
   padding: 10px 16px;
   width: 240px;
@@ -251,9 +265,39 @@ a {
   font-size: 18px;
   line-height: 122%;
   color: #04867e;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 556px;
+}
+.start_about_item_1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #3e1063;
+  text-align: right;
+  max-width: 340px;
+  align-items: end;
+}
+.start_about_btn2 {
+  border: 1px solid #3d3c39;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #04867e;
+  background-color: #fdfdfd;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 43px;
+  width: 240px;
+  height: 42px;
+}
+.start_about_chat {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: end;
+  margin-top: 36px;
 }
 
 .top-bar {
