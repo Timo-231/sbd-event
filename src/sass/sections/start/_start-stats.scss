@@ -1,1 +1,38 @@
 @use "../../base/variables" as *;
+
+.start_protocol {
+    padding-top: 100px;
+    padding-bottom: 113px;
+
+    &_title {
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 114%;
+        color: $white-text;
+
+        ::before {
+            border: 2px solid $white-text;
+            width: 384px;
+            height: 0px;
+            content: "";
+        }
+    }
+
+    &_card-title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 129%;
+        color: $gold-text;
+    }
+
+    &_list {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 160%;
+        color: $black-text;
+    }
+
+    
+
+
+}
