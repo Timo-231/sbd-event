@@ -16,15 +16,8 @@
 
     &__login {
         font-weight: 700;
-        font-size: 14px;
-        line-height: 129%;
-        color: $gold-text;
-    }
-
-    &__register {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 129%;
+        font-size: 18px;
+        line-height: 122%;
         color: $gold-text;
     }
 
@@ -63,13 +56,16 @@
             font-size: 16px;
             line-height: 113%;
             color: $gold-text;
+            margin-right: 128px;
         }
     }
 
-    &__info {
+    &__infos {
         display: none;
 
         @media screen and (min-width:1380px) {
+            display: flex;
+            justify-content: start;
             font-weight: 400;
             font-size: 16px;
             line-height: 113%;
@@ -96,7 +92,7 @@
 
         @media screen and (min-width:1380px) {
             display: flex;
-            gap: 40px; 
+            gap: 40px;
         }
     }
 
@@ -104,5 +100,10 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 122%;
+    }
+
+    &__sites {
+        display: flex;
+        
     }
 }

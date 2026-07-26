@@ -67,11 +67,14 @@ a {
   line-height: 129%;
   color: #a76e00;
 }
-.header__register {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 129%;
-  color: #a76e00;
+@media screen and (min-width: 1380px) {
+  .header__login {
+    margin-left: 138px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 129%;
+    color: #a76e00;
+  }
 }
 .header__logo {
   font-weight: 800;
@@ -109,6 +112,7 @@ a {
     font-size: 16px;
     line-height: 113%;
     color: #a76e00;
+    margin-right: 128px;
   }
 }
 .header__info {
@@ -116,6 +120,7 @@ a {
 }
 @media screen and (min-width: 1380px) {
   .header__info {
+    display: flex;
     font-weight: 400;
     font-size: 16px;
     line-height: 113%;
@@ -177,4 +182,26 @@ a {
   font-size: 64px;
   line-height: 125%;
   color: #da9d27;
+}
+
+.hero {
+  width: 1440px;
+  height: 551px;
+  background-image: url("../img/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #101010;
+  opacity: 0.8;
+}
+
+.hero-title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 114%;
+  color: #f8f1e9;
 }/*# sourceMappingURL=main.css.map */
