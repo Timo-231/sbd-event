@@ -1,5 +1,120 @@
 @use "../../base/variables" as *;
 
 .footer{
-    padding-top: 339px;
+     padding-top: 64px;
+background: $green-footer;
+}
+
+.main-title{
+    font-family: "Nunito", sans-serif;;
+font-weight: 800;
+font-size: 64px;
+line-height: 125%;
+color: $gold-logo;
+// padding-top: 64px;
+// padding-bottom: 416px;
+// padding-right: 127px;
+}
+
+.main-sentence{
+    font-family: "Nunito", sans-serif;;
+font-weight: 600;
+font-size: 10px;
+color: $gold-logo;
+padding: 4px;
+// padding-top: 64px;
+// padding-bottom: 416px;
+// padding-right: 127px;
+}
+
+.footer-list{
+     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main{
+    padding-top: 64px;
+padding-right: 127px;
+}
+
+
+.codes{
+  font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 113%;
+color: $grey-fon;
+}
+
+.footer-title{
+  font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 122%;
+color: $white-secondary;
+padding: 8px;
+}
+
+.text{
+    font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 113%;
+color: $grey-fon;
+padding: 8px;
+}
+
+.main-btn{
+    border: 1px solid $gold-logo;
+border-radius: 4px;
+padding: 10px 8px;
+width: 240px;
+height: 42px;
+background: $white-text;
+ font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 122%;
+color: $gold-text;
+}
+
+.button-footer{
+font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 113%;
+color: $grey-fon;
+background-color: transparent;
+border: none;
+}
+
+.numbers{
+font-family: "Montserrat", sans-serif;
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 113%;
+color: $white-text;
+}
+
+.number{
+    font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 113%;
+color:$grey-fon;
+color: $white-text;
+}
+
+.email{
+ font-family: "Montserrat", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 113%;
+color: $white-text;
+}
+
+.footer-item{
+    padding: 4px 8px;
 }
