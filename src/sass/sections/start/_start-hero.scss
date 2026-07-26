@@ -1,1 +1,63 @@
 @use "../../base/variables" as *;
+
+.start_hero {
+
+    padding-top: 80px;
+    padding-bottom: 287px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.709)), url(../img/img-desktop/hmain-desktop@1x.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_h1 {
+
+        font-weight: 500;
+        font-size: 68px;
+        line-height: 132%;
+        color: $white-text;
+        max-width: 800px;
+        margin-left: auto;
+        margin-bottom: 32px;
+    }
+
+    &_text {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 129%;
+        color: $white-secondary;
+
+    }
+
+    &_button {
+        border-bottom: 1px solid $black-text;
+        border-radius: 4px;
+        padding: 10px 16px;
+        width: 240px;
+        height: 42px;
+        color: $green-text;
+        background-color: $white-text;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 122%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+    }
+
+    &_info {
+        display: flex;
+        width: 800px;
+        align-items: end;
+        margin-left: auto;
+        position: relative;
+    }
+
+
+}

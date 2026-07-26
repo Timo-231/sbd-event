@@ -1,1 +1,18 @@
-@use "../../base/variables" as *;
+.portfolio {
+  background-image: url(../../../img/portfolio-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .container {
+    height: 551px;
+  }
+
+  &__title {
+    font-family: "Montserrat Alternates";
+    font-weight: 500;
+    font-size: 56px;
+    text-align: center;
+    color: white;
+
+  }
+}
