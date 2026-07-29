@@ -63,18 +63,9 @@ a {
 }
 .header__login {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 129%;
+  font-size: 18px;
+  line-height: 122%;
   color: #a76e00;
-}
-@media screen and (min-width: 1380px) {
-  .header__login {
-    margin-left: 138px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 129%;
-    color: #a76e00;
-  }
 }
 .header__logo {
   font-weight: 800;
@@ -115,12 +106,13 @@ a {
     margin-right: 128px;
   }
 }
-.header__info {
+.header__infos {
   display: none;
 }
 @media screen and (min-width: 1380px) {
-  .header__info {
+  .header__infos {
     display: flex;
+    justify-content: start;
     font-weight: 400;
     font-size: 16px;
     line-height: 113%;
@@ -154,6 +146,9 @@ a {
   font-weight: 700;
   font-size: 18px;
   line-height: 122%;
+}
+.header__sites {
+  display: flex;
 }
 
 .start_hero {
@@ -655,6 +650,7 @@ a {
   font-size: 64px;
   line-height: 125%;
   color: #da9d27;
+  padding-top: 64px;
 }
 
 .main-sentence {
@@ -665,15 +661,15 @@ a {
   padding: 4px;
 }
 
+main {
+  padding-top: 64px;
+  padding-bottom: 44px;
+}
+
 .footer-list {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.main {
-  padding-top: 64px;
-  padding-right: 127px;
 }
 
 .codes {
@@ -700,6 +696,7 @@ a {
   line-height: 113%;
   color: #979797;
   padding: 8px;
+  padding-bottom: 40px;
 }
 
 .main-btn {
