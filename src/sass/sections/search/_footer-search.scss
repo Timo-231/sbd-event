@@ -11,9 +11,7 @@ font-weight: 800;
 font-size: 64px;
 line-height: 125%;
 color: $gold-logo;
-// padding-top: 64px;
-// padding-bottom: 416px;
-// padding-right: 127px;
+padding-top: 64px;
 }
 
 .main-sentence{
@@ -27,16 +25,17 @@ padding: 4px;
 // padding-right: 127px;
 }
 
+main{
+    padding-top: 64px;
+    padding-bottom: 44px;
+}
+
 .footer-list{
      display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.main{
-    padding-top: 64px;
-padding-right: 127px;
-}
 
 
 .codes{
@@ -63,6 +62,7 @@ font-size: 16px;
 line-height: 113%;
 color: $grey-fon;
 padding: 8px;
+padding-bottom: 40px;
 }
 
 .main-btn{
