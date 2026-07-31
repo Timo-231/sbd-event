@@ -668,8 +668,23 @@ main {
 
 .footer-list {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  gap: 40px;
+  padding-top: 64px;
+}
+
+.footer-list > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.numbers, .number, .email {
+  display: block;
+  text-decoration: none;
+  padding: 6px 0;
 }
 
 .codes {
@@ -678,6 +693,10 @@ main {
   font-size: 16px;
   line-height: 113%;
   color: #979797;
+  padding-bottom: 124px;
+  padding: 8px;
+  width: 456px;
+  height: 88px;
 }
 
 .footer-title {
@@ -749,6 +768,13 @@ main {
   color: #fdfdfd;
 }
 
-.footer-item {
-  padding: 4px 8px;
+.footer-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.brand {
+  flex: 0 0 auto;
+  min-width: 200px;
 }/*# sourceMappingURL=main.css.map */
