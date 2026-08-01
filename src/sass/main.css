@@ -300,125 +300,6 @@ a {
   margin-top: 36px;
 }
 
-.protocol {
-  padding-top: 100px;
-  padding-bottom: 113px;
-  background-image: url(../../../img/img-desktop/protocol_fon.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-  background: #979797;
-}
-.protocol_container {
-  position: relative;
-  z-index: 1;
-}
-.protocol_title {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  font-weight: 500;
-  line-height: 114%;
-  color: #fdfdfd;
-  margin-bottom: 48px;
-  font-size: 56px;
-}
-.protocol_title::after {
-  content: "";
-  flex-grow: 1;
-  height: 2px;
-  background-color: #fdfdfd;
-}
-.protocol_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-.protocol_card {
-  background-color: #f8f1e9;
-  border-radius: 8px;
-  border: 1px solid #fdfdfd;
-  padding: 8px 8px 8px 24px;
-  width: 324px;
-  height: 440px;
-}
-.protocol_card-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 122%;
-  color: #a76e00;
-  margin-bottom: 24px;
-}
-.protocol_number {
-  color: #a76e00;
-}
-.protocol_list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  list-style: none;
-}
-.protocol_item {
-  font-weight: 400;
-  color: #3d3c39;
-  font-size: 20px;
-  line-height: 160%;
-}
-.protocol_item1 {
-  font-weight: 400;
-  color: #3d3c39;
-  font-size: 20px;
-  line-height: 160%;
-  width: 230px;
-}
-@media (max-width: 767px) {
-  .protocol {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-  .protocol_title {
-    font-size: 28px;
-    line-height: 120%;
-    margin-bottom: 24px;
-  }
-  .protocol_title::after {
-    display: none;
-  }
-  .protocol_grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  .protocol_card {
-    padding: 0;
-    border-radius: 12px;
-  }
-  .protocol_card-title {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 0;
-    padding: 18px 20px;
-    font-weight: 400;
-    font-size: 15px;
-    color: #a76e00;
-  }
-  .protocol_number {
-    width: 32px;
-    flex-shrink: 0;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 133%;
-    color: #a76e00;
-  }
-  .protocol_list {
-    display: none;
-  }
-}
-
 .headerp__container {
   display: flex;
   align-items: center;
@@ -525,7 +406,8 @@ a {
   background-position: center;
 }
 .portfolio .container {
-  height: 551px;
+  padding-bottom: 275px;
+  padding-top: 275px;
 }
 .portfolio__title {
   font-family: "Montserrat Alternates";
@@ -533,6 +415,42 @@ a {
   font-size: 56px;
   text-align: center;
   color: white;
+}
+
+.info {
+  padding-top: 100px;
+}
+.info .container {
+  padding-right: 144px;
+  padding-left: 144px;
+}
+.info__title {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 56px;
+  text-align: center;
+  color: rgb(167, 110, 0);
+  margin-bottom: 16px;
+}
+.info__description {
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(61, 60, 57);
+  text-align: center;
+  margin-bottom: 32px;
+}
+.info__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat";
+  color: rgb(4, 134, 126);
+  font-size: 18px;
+  font-weight: 700;
+  width: 240px;
+  height: 42px;
+  margin-left: 456px;
 }
 
 .top-bar {

@@ -4,7 +4,8 @@
   background-position: center;
 
   .container {
-    height: 551px;
+    padding-bottom: 275px;
+    padding-top: 275px;
   }
 
   &__title {
@@ -13,6 +14,7 @@
     font-size: 56px;
     text-align: center;
     color: white;
-
+    
   }
+  
 }
