@@ -301,121 +301,235 @@ a {
 }
 
 .protocol {
-  padding-top: 100px;
-  padding-bottom: 113px;
-  background-image: url(../../../img/img-desktop/protocol_fon.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-  background: #979797;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #979797;
 }
-.protocol_container {
-  position: relative;
-  z-index: 1;
+@media screen and (min-width: 1380px) {
+  .protocol {
+    padding-top: 108px;
+    padding-bottom: 113px;
+    background-image: url(../img/img-desktop/protocol_fon.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 .protocol_title {
-  display: flex;
-  align-items: center;
-  gap: 24px;
   font-weight: 500;
-  line-height: 114%;
+  font-size: 30px;
+  line-height: 133%;
   color: #fdfdfd;
-  margin-bottom: 48px;
-  font-size: 56px;
+  margin-bottom: 16px;
 }
-.protocol_title::after {
+@media screen and (min-width: 724px) {
+  .protocol_title {
+    font-size: 40px;
+    line-height: 120%;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .protocol_title {
+    font-size: 56px;
+    line-height: 114%;
+    margin-bottom: 48px;
+  }
+}
+.protocol::after {
   content: "";
   flex-grow: 1;
   height: 2px;
   background-color: #fdfdfd;
 }
 .protocol_grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-}
-.protocol_card {
-  background-color: #f8f1e9;
-  border-radius: 8px;
-  border: 1px solid #fdfdfd;
-  padding: 8px 8px 8px 24px;
-  width: 324px;
-  height: 440px;
-}
-.protocol_card-title {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 122%;
-  color: #a76e00;
-  margin-bottom: 24px;
-}
-.protocol_number {
-  color: #a76e00;
-}
-.protocol_list {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  list-style: none;
+}
+@media screen and (min-width: 724px) {
+  .protocol_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .protocol_grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+.protocol_card {
+  border-radius: 8px;
+  padding: 10px 16px;
+  width: 343px;
+  height: 60px;
+  background-color: #f8f1e9;
+}
+@media screen and (min-width: 724px) {
+  .protocol_card {
+    width: 316px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .protocol_card {
+    border: 1px solid #fdfdfd;
+    padding: 8px 8px 8px 24px;
+    width: 324px;
+    height: 440px;
+  }
+}
+.protocol_card_title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #a76e00;
+}
+@media screen and (min-width: 724px) {
+  .protocol_card_title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .protocol_card_title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 129%;
+  }
+}
+.protocol_list {
+  display: none;
+}
+@media screen and (min-width: 1380px) {
+  .protocol_list {
+    padding: 4px;
+    width: 260px;
+    height: 360px;
+    display: block;
+  }
 }
 .protocol_item {
-  font-weight: 400;
-  color: #3d3c39;
-  font-size: 20px;
-  line-height: 160%;
+  display: none;
+}
+@media screen and (min-width: 1380px) {
+  .protocol_item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #3d3c39;
+    display: block;
+  }
 }
 .protocol_item1 {
+  display: none;
+}
+@media screen and (min-width: 1380px) {
+  .protocol_item1 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #3d3c39;
+    width: 230px;
+    display: block;
+  }
+}
+.protocol_number {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 133%;
+  color: #a76e00;
+}
+@media screen and (min-width: 724px) {
+  .protocol_number {
+    font-size: 40px;
+    line-height: 120%;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .protocol_number {
+    font-size: 28px;
+    line-height: 129%;
+  }
+}
+
+.start__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 114%;
+  color: #a76e00;
+}
+.start__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.start__caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  color: #da9d27;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+.start__list {
+  padding-bottom: 200px;
+  max-width: 553px;
+}
+.start__sentence {
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #3d3c39;
   font-size: 20px;
   line-height: 160%;
-  width: 230px;
+  color: #3d3c39;
+  padding: 8px;
+  padding-top: 32px;
+  padding-bottom: 130px;
+  padding: 8px;
+  width: 553px;
+  height: 304px;
 }
-@media (max-width: 767px) {
-  .protocol {
-    padding-top: 48px;
-    padding-bottom: 48px;
+.start__btn {
+  border-bottom: 1px solid #3d3c39;
+  border-radius: 4px;
+  padding: 10px 16px;
+  background: #fdfdfd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #04867e;
+  width: 240px;
+  height: 42px;
+}
+.start__picture {
+  border: 2px solid #f8f1e9;
+  border-radius: 8px;
+  padding-bottom: 66px;
+  width: 670px;
+  height: 420px;
+  margin-right: 40px;
+}
+@media screen and (width: 768px) {
+  .start__picture {
+    width: 342px;
+    height: 232px;
+    padding-bottom: 54px;
+    margin-left: 300px;
   }
-  .protocol_title {
-    font-size: 28px;
-    line-height: 120%;
-    margin-bottom: 24px;
-  }
-  .protocol_title::after {
-    display: none;
-  }
-  .protocol_grid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  .protocol_card {
-    padding: 0;
-    border-radius: 12px;
-  }
-  .protocol_card-title {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 0;
-    padding: 18px 20px;
-    font-weight: 400;
-    font-size: 15px;
-    color: #a76e00;
-  }
-  .protocol_number {
-    width: 32px;
-    flex-shrink: 0;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 133%;
-    color: #a76e00;
-  }
-  .protocol_list {
-    display: none;
+}
+@media screen and (width: 480px) {
+  .start__picture {
+    width: 343px;
+    height: 232px;
+    padding-bottom: 16px;
+    margin: 16px;
   }
 }
 
