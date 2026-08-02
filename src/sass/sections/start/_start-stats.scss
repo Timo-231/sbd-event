@@ -1,148 +1,181 @@
 @use "../../base/variables" as *;
 
 .protocol {
-    padding-top: 100px;
-    padding-bottom: 113px;
-    background-image: url(../../../img/img-desktop/protocol_fon.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    position: relative;
-    overflow: hidden;
-    background: $grey-fon;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    background-color: $grey-fon;
+
+    @media screen and (min-width: 1380px) {
+        padding-top: 108px;
+        padding-bottom: 113px;
+        background-image: url(../img/img-desktop/protocol_fon.webp);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
 
 
 
     &_container {
-        position: relative;
-        z-index: 1;
+        
     }
 
     &_title {
-        display: flex;
-        align-items: center;
-        gap: 24px;
+
         font-weight: 500;
-        line-height: 114%;
+        font-size: 30px;
+        line-height: 133%;
         color: $white-text;
-        margin-bottom: 48px;
-        font-size: 56px;
+        margin-bottom: 16px;
 
-
-
-        &::after {
-            content: "";
-            flex-grow: 1;
-            height: 2px;
-            background-color: $white-text;
+        @media screen and (min-width: 724px) {
+            font-size: 40px;
+            line-height: 120%;
+            margin-bottom: 24px;
         }
+
+        @media screen and (min-width: 1380px) {
+
+            font-size: 56px;
+            line-height: 114%;
+            margin-bottom: 48px;
+
+        }
+
+    }
+
+    &::after {
+        content: "";
+        flex-grow: 1;
+        height: 2px;
+        background-color: $white-text;
     }
 
     &_grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-    }
-
-    &_card {
-        background-color: $white-fon;
-        border-radius: 8px;
-        border: 1px solid $white-text;
-        padding: 8px 8px 8px 24px;
-        width: 324px;
-        height: 440px;
-    }
-
-    &_card-title {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 122%;
-        color: $gold-text;
-        margin-bottom: 24px;
-
-    }
-
-    &_number {
-        color: $gold-text;
-    }
-
-    &_list {
         display: flex;
         flex-direction: column;
         gap: 8px;
-        list-style: none;
+
+        @media screen and (min-width: 724px) {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+        }
+
+        @media screen and (min-width: 1380px) {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+        }
+    }
+
+    &_card {
+        border-radius: 8px;
+        padding: 10px 16px;
+        width: 343px;
+        height: 60px;
+        background-color: $white-fon;
+
+        @media screen and (min-width: 724px) {
+            width: 316px;
+        }
+
+        @media screen and (min-width: 1380px) {
+            border: 1px solid $white-text;
+            padding: 8px 8px 8px 24px;
+            width: 324px;
+            height: 440px;
+        }
+
+    }
+
+    &_card_title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $gold-text;
+        
+
+        @media screen and (min-width: 724px) {
+
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 133%;
+        }
+
+        @media screen and (min-width: 1380px) {
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 129%;
+
+        }
+
+    }
+
+
+    &_list {
+        display: none;
+
+        @media screen and (min-width: 724px) {}
+
+        @media screen and (min-width: 1380px) {
+            padding: 4px;
+            width: 260px;
+            height: 360px;
+            display: block;
+        }
+
     }
 
     &_item {
-        font-weight: 400;
-        color: $black-text;
-        font-size: 20px;
-        line-height: 160%;
+        display: none;
+
+        @media screen and (min-width: 724px) {}
+
+        @media screen and (min-width: 1380px) {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 160%;
+            color: $black-text;
+            display: block;
+        }
+
     }
 
     &_item1 {
-        font-weight: 400;
-        color: $black-text;
-        font-size: 20px;
-        line-height: 160%;
-        width: 230px;
-    }
+        display: none;
 
+        @media screen and (min-width: 724px) {}
 
-    @media (max-width: 767px) {
-        padding-top: 48px;
-        padding-bottom: 48px;
-
-        &_title {
-            font-size: 28px;
-            line-height: 120%;
-            margin-bottom: 24px;
-
-            &::after {
-                display: none;
-            }
-        }
-
-        &_grid {
-            grid-template-columns: 1fr;
-            gap: 12px;
-        }
-
-        &_card {
-            padding: 0;
-            border-radius: 12px;
-        }
-
-        &_card-title {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 0;
-            padding: 18px 20px;
+        @media screen and (min-width: 1380px) {
             font-weight: 400;
-            font-size: 15px;
-            color: $gold-text;
-        }
-
-        &_number {
-           
-            
-           
-            width: 32px;
-            flex-shrink: 0;
-            font-weight: 500;
-            font-size: 30px;
-            line-height: 133%;
-            color: $gold-text;
-        }
-
-        
-
-        &_list {
-            display: none;
+            font-size: 20px;
+            line-height: 160%;
+            color: $black-text;
+            width: 230px;
+            display: block;
         }
     }
+
+    &_number {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 133%;
+        color: $gold-text;
+
+        @media screen and (min-width: 724px) {
+            font-size: 40px;
+            line-height: 120%;
+        }
+
+        @media screen and (min-width: 1380px) {
+            font-size: 28px;
+            line-height: 129%;
+        }
+    }
+
 }

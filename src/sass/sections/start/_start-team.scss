@@ -1,89 +1,137 @@
-@use "../../base/variables" as *;
+@use '../../base/variables' as *;
 
-.start{
+.start {
+  padding-top: 48px;
+  padding-bottom: 48px;
 
-&__title{
-    font-family:  "Montserrat Alternates", sans-serif;;
-font-weight: 500;
-font-size: 56px;
-line-height: 114%;
-color: $gold-text;
-}
+  @media screen and (min-width: 724px) {
+    padding-top: 80px;
+  }
 
-&__row{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 40px;
-}
+  @media screen and (min-width: 1380px) {
+    padding-top: 100px;
+  }
 
-&__caption{
-    font-family: "Montserrat", sans-serif;;
-font-weight: 500;
-font-size: 28px;
+  &__title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 133%;
+    color: $gold-text;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 724px) {
+      font-size: 40px;
+      line-height: 120%;
+    }
+
+    @media screen and (min-width: 1380px) {
+      font-size: 56px;
+      line-height: 114%;
+    }
+  }
+
+  &__caption {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $gold-logo;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 724px) {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 133%;
+      margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 1380px) {
+      margin-bottom: 24px;
+      font-size: 28px;
+      line-height: 129%;
+    }
+  }
+
+  &__sentence {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: $black-text;
+
+    @media screen and (min-width: 724px) {
+      font-size: 14px;
+      line-height: 129%;
+      width: 349px;
+    }
+
+    @media screen and (min-width: 1380px) {
+      font-size: 20px;
+      line-height: 160%;
+      width: 553px;
+    }
+  }
+
+  &__btn{
+ font-family: 'Montserrat', sans-serif;
+font-weight: 700;
+font-size: 14px;
 line-height: 129%;
-color: $gold-logo;
-padding-top: 32px;
-padding-bottom: 24px;
-}
-
-&__list{
-    padding-bottom: 200px;
-        max-width: 553px;
-}
-
-&__sentence{
-    font-family: "Montserrat", sans-serif;;
-font-weight: 400;
-font-size: 20px;
-line-height: 160%;
-color: $black-text;
-padding: 8px;
-padding-top: 32px;
-padding-bottom: 130px;
-padding: 8px;
-width: 553px;
-height: 304px;
-}
-
-&__btn{
-  border-bottom: 1px solid $black-text;
-  border-radius: 4px;
-  padding: 10px 16px;
-  background: $white-text;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 122%;
-  color: $green-text;
-    width: 240px;
-    height: 42px;
-}
+color: $green-text;
+border-radius: 4px;
+padding: 12px;
+width: 100%;
+height: 42px;
+background: $white-fon;
+margin-top: 16px;
 
 
 
-&__picture{
-      border: 2px solid $white-fon;
-    border-radius: 8px;
-padding-bottom:66px ;
+    @media screen and (min-width: 724px) {
+font-size: 16px;
+line-height: 113%;
+border: none;
+border-bottom: 1px  solid $black-text;
+border-radius: 4px;
+width: 200px;
+height: 42px;
+background-color: transparent;
+
+    }
+
+    @media screen and (min-width: 1380px) {
+font-size: 18px;
+line-height: 122%;
+    }
+
+  }
+  
+  &__wrap{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__picture{
+    order: -1;
+    @media screen and (min-width:724px) {
+        border: 2px solid $white-fon;
+border-radius: 8px;
+width: 342px;
+height: 232px;
+order: 0;
+    }
+        @media screen and (min-width: 1380px) {
 width: 670px;
-height: 420px;
-    margin-right: 40px;
+height: 420px
+    }
+  }
 
-@media screen and (width:768px) {
-    width: 342px;
-height: 232px;
-padding-bottom: 54px;
-margin-left: 300px;
-}
+  &__wraps{
+    @media screen and (min-width:724px) {
+display: flex;
+justify-content: space-between;
 
-@media screen and (width:480px) {
-    width: 343px;
-height: 232px;
-padding-bottom: 16px;
-margin: 16px;
-}
-}
-
-
+    }
+  }
 }
