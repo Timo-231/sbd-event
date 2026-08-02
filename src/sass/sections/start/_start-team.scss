@@ -1,1 +1,89 @@
 @use "../../base/variables" as *;
+
+.start{
+
+&__title{
+    font-family:  "Montserrat Alternates", sans-serif;;
+font-weight: 500;
+font-size: 56px;
+line-height: 114%;
+color: $gold-text;
+}
+
+&__row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+&__caption{
+    font-family: "Montserrat", sans-serif;;
+font-weight: 500;
+font-size: 28px;
+line-height: 129%;
+color: $gold-logo;
+padding-top: 32px;
+padding-bottom: 24px;
+}
+
+&__list{
+    padding-bottom: 200px;
+        max-width: 553px;
+}
+
+&__sentence{
+    font-family: "Montserrat", sans-serif;;
+font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+color: $black-text;
+padding: 8px;
+padding-top: 32px;
+padding-bottom: 130px;
+padding: 8px;
+width: 553px;
+height: 304px;
+}
+
+&__btn{
+  border-bottom: 1px solid $black-text;
+  border-radius: 4px;
+  padding: 10px 16px;
+  background: $white-text;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: $green-text;
+    width: 240px;
+    height: 42px;
+}
+
+
+
+&__picture{
+      border: 2px solid $white-fon;
+    border-radius: 8px;
+padding-bottom:66px ;
+width: 670px;
+height: 420px;
+    margin-right: 40px;
+
+@media screen and (width:768px) {
+    width: 342px;
+height: 232px;
+padding-bottom: 54px;
+margin-left: 300px;
+}
+
+@media screen and (width:480px) {
+    width: 343px;
+height: 232px;
+padding-bottom: 16px;
+margin: 16px;
+}
+}
+
+
+}
