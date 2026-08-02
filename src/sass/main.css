@@ -419,50 +419,213 @@ a {
   }
 }
 
+.start__title {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 114%;
+  color: #a76e00;
+}
+.start__row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+.start__caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  color: #da9d27;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+.start__list {
+  padding-bottom: 200px;
+  max-width: 553px;
+}
+.start__sentence {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #3d3c39;
+  padding: 8px;
+  padding-top: 32px;
+  padding-bottom: 130px;
+  padding: 8px;
+  width: 553px;
+  height: 304px;
+}
+.start__btn {
+  border-bottom: 1px solid #3d3c39;
+  border-radius: 4px;
+  padding: 10px 16px;
+  background: #fdfdfd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #04867e;
+  width: 240px;
+  height: 42px;
+}
+.start__picture {
+  border: 2px solid #f8f1e9;
+  border-radius: 8px;
+  padding-bottom: 66px;
+  width: 670px;
+  height: 420px;
+  margin-right: 40px;
+}
+@media screen and (width: 768px) {
+  .start__picture {
+    width: 342px;
+    height: 232px;
+    padding-bottom: 54px;
+    margin-left: 300px;
+  }
+}
+@media screen and (width: 480px) {
+  .start__picture {
+    width: 343px;
+    height: 232px;
+    padding-bottom: 16px;
+    margin: 16px;
+  }
+}
+
 .video .container {
-  padding-bottom: 104px;
-  padding-top: 104px;
+  padding-bottom: 40px;
+  padding-top: 40px;
   background-color: rgb(151, 151, 151);
+}
+@media screen and (min-width: 724px) {
+  .video .container {
+    padding-bottom: 54px;
+    padding-top: 54px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .video .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 .video__title {
   font-family: "Montserrat Alternates";
   font-weight: 500;
-  font-size: 56px;
+  font-size: 30px;
   text-align: left;
   color: rgb(248, 241, 233);
   margin-bottom: 24px;
 }
+@media screen and (min-width: 724px) {
+  .video__title {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .video__title {
+    margin-left: 38px;
+    font-size: 56px;
+  }
+}
 .video__subtitle {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
   color: rgb(62, 16, 99);
   margin-bottom: 24px;
 }
+@media screen and (min-width: 1380px) {
+  .video__subtitle {
+    font-size: 16px;
+  }
+}
 .video__vid {
+  display: flex;
   width: 664px;
   height: 400px;
-  margin-left: 265px;
+  margin-left: 255px;
+  display: none;
+}
+@media screen and (min-width: 1380px) {
+  .video__vid {
+    display: block;
+  }
+}
+.video__vit {
+  display: none;
+  width: 346px;
+  height: 260px;
+  margin-left: 88px;
+}
+@media screen and (min-width: 724px) {
+  .video__vit {
+    display: block;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .video__vit {
+    display: none;
+  }
+}
+.video__vim {
+  width: 100%;
+  height: 240px;
+}
+@media screen and (min-width: 724px) {
+  .video__vim {
+    display: none;
+  }
 }
 .video__box {
   background-color: rgb(248, 241, 233);
-  width: 1200px;
-  height: 480px;
-  margin-left: 100px;
+  width: 100%;
+  height: 340px;
   border-radius: 2px;
+}
+@media screen and (min-width: 724px) {
+  .video__box {
+    margin-left: 114px;
+    width: 522px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .video__box {
+    width: 1200px;
+    height: 480px;
+    margin-left: 110px;
+  }
 }
 .video .button__btn {
   align-items: center;
   justify-content: center;
   font-family: "Montserrat";
   font-weight: 700;
-  font-size: 18px;
-  width: 240px;
+  font-size: 14px;
+  width: 100%;
   height: 42px;
   color: rgb(4, 134, 126);
-  margin-left: 600px;
   margin-top: 34px;
+}
+@media screen and (min-width: 724px) {
+  .video .button__btn {
+    margin-top: 16px;
+    width: 200px;
+    font-size: 16px;
+    margin-left: 274px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .video .button__btn {
+    font-size: 18px;
+    margin-left: 606px;
+  }
 }
 
 .headerp__container {
