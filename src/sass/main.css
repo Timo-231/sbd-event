@@ -462,14 +462,14 @@ a {
 }
 @media screen and (min-width: 724px) {
   .design {
-    padding-top: 80px;
-    padding-bottom: 64px;
+    padding-top: 90px;
+    padding-bottom: 48px;
   }
 }
 @media screen and (min-width: 1380px) {
   .design {
     padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 46px;
   }
 }
 .design .header-design {
@@ -541,9 +541,13 @@ a {
   background-size: cover;
   background-position: center;
   border-radius: 8px;
-  box-shadow: 0 15px 35px rgba(16, 16, 16, 0.15);
 }
 @media screen and (min-width: 724px) {
+  .design .photo {
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1380px) {
   .design .photo {
     position: absolute;
   }
@@ -559,16 +563,18 @@ a {
     aspect-ratio: unset;
     top: 0;
     left: 0;
-    width: 35.7vw;
-    height: 27vw;
+    width: 276px;
+    height: 210px;
+    border: 2px solid #f8f1e9;
   }
 }
 @media screen and (min-width: 1380px) {
   .design .photo1 {
     top: 0;
     left: 0;
-    width: 404px;
-    height: 258px;
+    border: 2px solid #f8f1e9;
+    width: 405px;
+    height: 260px;
   }
 }
 .design .photo2 {
@@ -583,16 +589,18 @@ a {
     aspect-ratio: unset;
     top: 13.6vw;
     left: 18.1vw;
-    width: 63.8vw;
-    height: 37.7vw;
+    width: 492px;
+    height: 292px;
+    border: 2px solid #f8f1e9;
   }
 }
 @media screen and (min-width: 1380px) {
   .design .photo2 {
     top: 131px;
     left: 201px;
+    border: 2px solid #f8f1e9;
     width: 720px;
-    height: 357px;
+    height: 360px;
   }
 }
 .design .photo3 {
@@ -604,16 +612,18 @@ a {
   .design .photo3 {
     top: 37.9vw;
     left: 64vw;
-    width: 36vw;
-    height: 26.9vw;
+    border: 2px solid #f8f1e9;
+    width: 276px;
+    height: 210px;
   }
 }
 @media screen and (min-width: 1380px) {
   .design .photo3 {
     top: 361px;
     left: 720px;
-    width: 401px;
-    height: 257px;
+    border: 2px solid #f8f1e9;
+    width: 402px;
+    height: 260px;
   }
 }
 .design .button-box-design {
