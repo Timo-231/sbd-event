@@ -5,13 +5,13 @@
     padding-bottom: 48px;
 
     @media screen and (min-width: 724px) {
-        padding-top: 80px;
-        padding-bottom: 64px;
+        padding-top: 90px;
+        padding-bottom: 48px;
     }
 
     @media screen and (min-width: 1380px) {
         padding-top: 100px;
-        padding-bottom: 80px;
+        padding-bottom: 46px;
     }
 
     .header-design {
@@ -38,6 +38,8 @@
         font-size: 30px;
         line-height: 133%;
         color: $gold-text;
+
+
 
         @media screen and (min-width: 724px) {
             font-size: 40px;
@@ -81,9 +83,13 @@
         background-size: cover;
         background-position: center;
         border-radius: 8px;
-        box-shadow: 0 15px 35px rgba(16, 16, 16, 0.15);
+
 
         @media screen and (min-width: 724px) {
+            position: absolute;
+        }
+
+        @media screen and (min-width: 1380px) {
             position: absolute;
         }
     }
@@ -98,15 +104,17 @@
             aspect-ratio: unset;
             top: 0;
             left: 0;
-            width: 35.7vw;
-            height: 27vw;
+            width: 276px;
+            height: 210px;
+            border: 2px solid $white-fon;
         }
 
         @media screen and (min-width: 1380px) {
             top: 0;
             left: 0;
-            width: 404px;
-            height: 258px;
+            border: 2px solid $white-fon;
+            width: 405px;
+            height: 260px;
         }
     }
 
@@ -115,22 +123,24 @@
         grid-row: 2;
         aspect-ratio: 4 / 3;
         border-radius: 8px;
-        
+
         background-image: url("../../../img/img-desktop/mainc1-desktop@1x.webp");
 
         @media screen and (min-width: 724px) {
             aspect-ratio: unset;
             top: 13.6vw;
             left: 18.1vw;
-            width: 63.8vw;
-            height: 37.7vw;
+            width: 492px;
+            height: 292px;
+            border: 2px solid $white-fon;
         }
 
         @media screen and (min-width: 1380px) {
             top: 131px;
             left: 201px;
+            border: 2px solid $white-fon;
             width: 720px;
-            height: 357px;
+            height: 360px;
         }
     }
 
@@ -142,15 +152,17 @@
         @media screen and (min-width: 724px) {
             top: 37.9vw;
             left: 64vw;
-            width: 36vw;
-            height: 26.9vw;
+            border: 2px solid $white-fon;
+            width: 276px;
+            height: 210px;
         }
 
         @media screen and (min-width: 1380px) {
             top: 361px;
             left: 720px;
-            width: 401px;
-            height: 257px;
+            border: 2px solid $white-fon;
+            width: 402px;
+            height: 260px;
         }
     }
 
