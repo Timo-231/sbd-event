@@ -456,6 +456,216 @@ a {
   }
 }
 
+.design {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 724px) {
+  .design {
+    padding-top: 90px;
+    padding-bottom: 48px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .design {
+    padding-top: 100px;
+    padding-bottom: 46px;
+  }
+}
+.design .header-design {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.design .line-design {
+  display: none;
+}
+@media screen and (min-width: 1380px) {
+  .design .line-design {
+    display: block;
+    flex-shrink: 0;
+    width: 433px;
+    height: 2px;
+    background-color: #a76e00;
+  }
+}
+.design .title-design {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 133%;
+  color: #a76e00;
+}
+@media screen and (min-width: 724px) {
+  .design .title-design {
+    font-size: 40px;
+    line-height: 120%;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .design .title-design {
+    font-size: 56px;
+    line-height: 114%;
+  }
+}
+.design .gallery-design {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 16px;
+  margin-top: 20px;
+}
+@media screen and (min-width: 724px) {
+  .design .gallery-design {
+    display: block;
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    height: 64.8vw;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .design .gallery-design {
+    width: 1121px;
+    height: 618px;
+    left: auto;
+    margin-left: 119px;
+    margin-top: 40px;
+  }
+}
+.design .photo {
+  background-color: #f8f1e9;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+@media screen and (min-width: 724px) {
+  .design .photo {
+    position: absolute;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .design .photo {
+    position: absolute;
+  }
+}
+.design .photo1 {
+  grid-column: 1;
+  grid-row: 1;
+  aspect-ratio: 4/3;
+  background-image: url("../../../img/img-desktop/mainc-desktop@1x.webp");
+}
+@media screen and (min-width: 724px) {
+  .design .photo1 {
+    aspect-ratio: unset;
+    top: 0;
+    left: 0;
+    width: 276px;
+    height: 210px;
+    border: 2px solid #f8f1e9;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .design .photo1 {
+    top: 0;
+    left: 0;
+    border: 2px solid #f8f1e9;
+    width: 405px;
+    height: 260px;
+  }
+}
+.design .photo2 {
+  grid-column: 1;
+  grid-row: 2;
+  aspect-ratio: 4/3;
+  border-radius: 8px;
+  background-image: url("../../../img/img-desktop/mainc1-desktop@1x.webp");
+}
+@media screen and (min-width: 724px) {
+  .design .photo2 {
+    aspect-ratio: unset;
+    top: 13.6vw;
+    left: 18.1vw;
+    width: 492px;
+    height: 292px;
+    border: 2px solid #f8f1e9;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .design .photo2 {
+    top: 131px;
+    left: 201px;
+    border: 2px solid #f8f1e9;
+    width: 720px;
+    height: 360px;
+  }
+}
+.design .photo3 {
+  grid-column: 2;
+  grid-row: 1/span 2;
+  background-image: url("../../../img/img-desktop/mainc2-desktop@1x.webp");
+}
+@media screen and (min-width: 724px) {
+  .design .photo3 {
+    top: 37.9vw;
+    left: 64vw;
+    border: 2px solid #f8f1e9;
+    width: 276px;
+    height: 210px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .design .photo3 {
+    top: 361px;
+    left: 720px;
+    border: 2px solid #f8f1e9;
+    width: 402px;
+    height: 260px;
+  }
+}
+.design .button-box-design {
+  margin-top: 16px;
+}
+@media screen and (min-width: 1380px) {
+  .design .button-box-design {
+    margin-top: 24px;
+  }
+}
+.design .design-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #04867e;
+  background-color: #f8f1e9;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  width: 100%;
+  height: 42px;
+  font-size: 14px;
+  line-height: 129%;
+  cursor: pointer;
+}
+@media screen and (min-width: 724px) {
+  .design .design-btn {
+    width: 200px;
+    font-size: 16px;
+    line-height: 113%;
+    background-color: transparent;
+    border-bottom: 1px solid #3d3c39;
+    border-radius: 4px;
+  }
+}
+@media screen and (min-width: 1380px) {
+  .design .design-btn {
+    width: 240px;
+    font-size: 18px;
+    line-height: 122%;
+  }
+}
+
 .start {
   padding-top: 48px;
   padding-bottom: 48px;
