@@ -32,7 +32,6 @@ a {
   max-width: 1380px;
   margin: 0 auto;
   padding: 0 10px;
-  outline: 1px solid red;
   box-sizing: border-box;
 }
 @media screen and (min-width: 363px) {
@@ -331,16 +330,19 @@ a {
 }
 @media screen and (min-width: 1380px) {
   .protocol_title {
+    display: flex;
+    align-items: center;
+    gap: 48px;
     font-size: 56px;
     line-height: 114%;
     margin-bottom: 48px;
   }
-}
-.protocol::after {
-  content: "";
-  flex-grow: 1;
-  height: 2px;
-  background-color: #fdfdfd;
+  .protocol_title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #fdfdfd;
+  }
 }
 .protocol_grid {
   display: flex;
@@ -349,16 +351,13 @@ a {
 }
 @media screen and (min-width: 724px) {
   .protocol_grid {
-    display: flex;
-    flex-direction: column;
     gap: 16px;
   }
 }
 @media screen and (min-width: 1380px) {
   .protocol_grid {
-    display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 18px;
   }
 }
 .protocol_card {
@@ -375,13 +374,17 @@ a {
 }
 @media screen and (min-width: 1380px) {
   .protocol_card {
+    box-sizing: border-box;
     border: 1px solid #fdfdfd;
-    padding: 8px 8px 8px 24px;
+    padding: 10px 24px;
     width: 324px;
     height: 440px;
   }
 }
 .protocol_card_title {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -406,10 +409,10 @@ a {
 }
 @media screen and (min-width: 1380px) {
   .protocol_list {
-    padding: 4px;
-    width: 260px;
-    height: 360px;
     display: block;
+    padding: 4px 0 0;
+    margin: 12px 0 0;
+    width: 100%;
   }
 }
 .protocol_item {
@@ -429,15 +432,17 @@ a {
 }
 @media screen and (min-width: 1380px) {
   .protocol_item1 {
+    display: block;
     font-weight: 400;
     font-size: 20px;
-    line-height: 160%;
+    line-height: 1.6;
     color: #3d3c39;
-    width: 230px;
-    display: block;
+    width: 100%;
+    margin-bottom: 8px;
   }
 }
 .protocol_number {
+  flex-shrink: 0;
   font-weight: 500;
   font-size: 30px;
   line-height: 133%;
@@ -1123,6 +1128,146 @@ a {
   width: 1360px;
   height: 80px;
   gap: 40px;
+}
+
+.footer {
+  padding-top: 64px;
+  background: #16392d;
+}
+
+.main-title {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 125%;
+  color: #da9d27;
+  padding-top: 64px;
+}
+
+.main-sentence {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  color: #da9d27;
+  padding: 4px;
+}
+
+main {
+  padding-top: 64px;
+  padding-bottom: 44px;
+}
+
+.footer-list {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding-top: 64px;
+}
+
+.footer-list > li {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.numbers, .number, .email {
+  display: block;
+  text-decoration: none;
+  padding: 6px 0;
+}
+
+.codes {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 113%;
+  color: #979797;
+  padding-bottom: 124px;
+  padding: 8px;
+  width: 456px;
+  height: 88px;
+}
+
+.footer-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #979797;
+  padding: 8px;
+}
+
+.text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 113%;
+  color: #979797;
+  padding: 8px;
+  padding-bottom: 40px;
+}
+
+.main-btn {
+  border: 1px solid #da9d27;
+  border-radius: 4px;
+  padding: 10px 8px;
+  width: 240px;
+  height: 42px;
+  background: #fdfdfd;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #a76e00;
+}
+
+.button-footer {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 113%;
+  color: #979797;
+  background-color: transparent;
+  border: none;
+}
+
+.numbers {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 113%;
+  color: #fdfdfd;
+}
+
+.number {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 113%;
+  color: #979797;
+  color: #fdfdfd;
+}
+
+.email {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 113%;
+  color: #fdfdfd;
+}
+
+.footer-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.brand {
+  flex: 0 0 auto;
+  min-width: 200px;
 }
 
 .headerp__container {
